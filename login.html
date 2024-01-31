@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Student Enrollment Form</title>
+</head>
+<body>
+ <h1>Student Enrollment Form</h1>
+ <form action="/submit_enrollment" method="post">
+ <!-- Input field for Name -->
+ <div>
+ <label for="name">Name:</label>
+ <input type="text" id="name" name="name" required>
+ </div>
+ <!-- Input field for Roll Number -->
+ <div>
+ <label for="rollNumber">Roll Number:</label>
+ <input type="text" id="rollNumber" name="rollNumber" required>
+ </div>
+ <!-- Input field for Department -->
+ <div>
+ <label for="department">Department:</label>
+ <input type="text" id="department" name="department" required>
+ </div>
+ <!-- Input field for Year of Study -->
+ <div>
+ <label for="yearOfStudy">Year of Study:</label>
+ <select id="yearOfStudy" name="yearOfStudy" required>
+ <option value="1">First Year</option>
+ <option value="2">Second Year</option>
+ <option value="3">Third Year</option>
+ <option value="4">Fourth Year</option>
+ </select>
+ </div>
+ <!-- Input field for Number of Courses Enrolled -->
+ <div>
+ <label for="numberOfCourses">Number of Courses Enrolled:</label>
+ <input type="number" id="numberOfCourses" name="numberOfCourses" required>
+ </div>
+ <!-- Input field for Choice of Slot -->
+ <div>
+ <label>Choice of Slot:</label>
+ <div>
+ <input type="radio" id="morningSlot" name="slot" value="Morning" required>
+ <label for="morningSlot">Morning</label>
+ </div>
+ <div>
+ <input type="radio" id="afternoonSlot" name="slot" value="Afternoon" required>
+ <label for="afternoonSlot">Afternoon</label>
+ </div>
+ <div>
+ <input type="radio" id="eveningSlot" name="slot" value="Evening" required>
+ <label for="eveningSlot">Evening</label>
+</div>
+</div>
+<!-- Submit button -->
+<div>
+<input type="submit" value="Submit">
+</div>
+</form>
+</body>
+</html>
